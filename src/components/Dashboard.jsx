@@ -369,8 +369,8 @@ export default function Dashboard({ session, handleLogout }) {
                 />
               </div>
 
-              <button type="submit" className="btn btn-primary" style={{ marginTop: '8px' }} disabled={withdrawLoading || stats.balance_xof < 500}>
-                {withdrawLoading ? 'Traitement en cours...' : stats.balance_xof < 500 ? 'Solde trop bas (min 500 F)' : 'Demander le transfert'}
+              <button type="submit" className="btn btn-primary" style={{ marginTop: '8px' }} disabled={withdrawLoading || stats.balance_xof < 1000}>
+                {withdrawLoading ? 'Traitement en cours...' : stats.balance_xof < 1000 ? 'Solde trop bas (min 1 000 F)' : 'Demander le transfert'}
               </button>
             </form>
           </div>
