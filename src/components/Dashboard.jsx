@@ -56,10 +56,9 @@ export default function Dashboard({ session, handleLogout }) {
     }
   }, [session]);
 
-  // Générer le lien de parrainage WhatsApp
+  // Générer le lien de parrainage (avec suivi des clics par redirection)
   const referralCode = session.ambassador?.referral_code || 'CODE';
-  const whatsappMessage = `Salut Photonet, je souhaite m'inscrire avec le code ${referralCode}`;
-  const whatsappLink = `https://wa.me/${BOT_PHONE}?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `${BACKEND_URL}/ref/${referralCode}`;
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(whatsappLink);
