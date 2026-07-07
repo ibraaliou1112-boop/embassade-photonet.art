@@ -163,7 +163,7 @@ export default function Dashboard({ session, handleLogout }) {
         <div className="glass-panel share-card">
           <h3 className="share-title">Votre Lien de Parrainage WhatsApp</h3>
           <p className="share-desc">
-            Partagez ce lien avec vos contacts. Lorsqu'ils cliqueront sur le lien, WhatsApp s'ouvrira avec votre code de parrainage pré-rempli. Dès qu'ils s'inscriront sur le bot et achèteront des générations, vous toucherez <strong>30% de commission</strong> sur tous leurs achats !
+            Recommandez Photonet à vos proches commerçants, créateurs de contenu ou e-commerçants. Lorsqu'ils s'inscrivent et rechargent leur compte pour propulser leurs ventes, vous encaissez immédiatement <strong>30% de commission cash</strong> sur tous leurs achats, à vie !
           </p>
           <div className="share-input-group">
             <div className="share-link">
@@ -181,6 +181,54 @@ export default function Dashboard({ session, handleLogout }) {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Section Guide de Réussite & Conseils de Conversion */}
+        <div className="glass-panel success-guide-card" style={{ marginTop: '24px', padding: '28px', border: '1px solid rgba(234, 88, 12, 0.15)', background: 'linear-gradient(135deg, rgba(234, 88, 12, 0.02) 0%, rgba(255, 255, 255, 0.95) 100%)' }}>
+          <h3 className="share-title" style={{ color: 'var(--accent-primary)', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '16px', fontWeight: 700, marginBottom: '8px' }}>
+            🚀 Guide d'Élite : Comment maximiser vos gains ?
+          </h3>
+          <p className="share-desc" style={{ marginBottom: '20px', fontSize: '13px', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+            Ne vous contentez pas de copier le lien : appliquez ces conseils éprouvés pour captiver vos contacts et bâtir un revenu passif solide !
+          </p>
+          
+          <div className="guide-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
+            <div className="guide-item" style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              <div style={{ fontWeight: 700, fontSize: '13.5px', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                💰 30% de commission à VIE
+              </div>
+              <p style={{ fontSize: '12px', color: 'var(--text-secondary)', lineHeight: '1.4' }}>
+                Vous touchez <strong>30%</strong> sur <strong>chaque recharge</strong> effectuée par vos filleuls, aujourd'hui et pour toujours. C'est un revenu passif garanti à long terme !
+              </p>
+            </div>
+
+            <div className="guide-item" style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              <div style={{ fontWeight: 700, fontSize: '13.5px', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                📢 Partagez des exemples réels
+              </div>
+              <p style={{ fontSize: '12px', color: 'var(--text-secondary)', lineHeight: '1.4' }}>
+                Montrez des exemples d'affiches créées avec Photonet. Expliquez-leur qu'ils économisent des frais de graphiste et obtiennent un visuel pro en 30 secondes chrono !
+              </p>
+            </div>
+
+            <div className="guide-item" style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              <div style={{ fontWeight: 700, fontSize: '13.5px', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                📲 Où diffuser votre lien ?
+              </div>
+              <p style={{ fontSize: '12px', color: 'var(--text-secondary)', lineHeight: '1.4' }}>
+                Mettez votre lien en <strong>Statut WhatsApp</strong> quotidiennement, partagez-le dans vos groupes d'entrepreneurs locaux et sur vos pages de réseaux sociaux.
+              </p>
+            </div>
+
+            <div className="guide-item" style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              <div style={{ fontWeight: 700, fontSize: '13.5px', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                ⚡ Retraits sous 72H ouvrées
+              </div>
+              <p style={{ fontSize: '12px', color: 'var(--text-secondary)', lineHeight: '1.4' }}>
+                Vos demandes de retrait (dès <strong>2 000 F CFA</strong>) sont traitées en toute sécurité et créditées sous 72h via Mobile Money (Wave, MTN, Moov, Orange).
+              </p>
             </div>
           </div>
         </div>
