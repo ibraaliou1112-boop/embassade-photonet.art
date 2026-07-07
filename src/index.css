@@ -108,6 +108,8 @@ h1, h2, h3, h4 {
 
 .auth-card {
   width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
   padding: 32px;
   border-radius: 16px;
   border: 1px solid var(--border-color);
@@ -290,7 +292,7 @@ h1, h2, h3, h4 {
 
 .dashboard-nav {
   height: 70px;
-  background: transparent;
+  background: #ffffff; /* Solid non-transparent background */
   border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
@@ -647,4 +649,50 @@ h1, h2, h3, h4 {
 .tab-btn.active {
   color: var(--accent-primary);
   background: rgba(234, 88, 12, 0.05);
+}
+
+/* Mobile-First Responsive Overrides */
+@media (max-width: 600px) {
+  .dashboard-content {
+    padding: 20px 12px !important;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important; /* 2 columns for better screen usage on mobile */
+    gap: 12px !important;
+  }
+  .stat-card {
+    padding: 14px !important;
+  }
+  .stat-value {
+    font-size: 20px !important;
+  }
+  .share-card, .withdraw-card {
+    padding: 16px !important;
+  }
+  .nav-user-info {
+    display: none !important; /* Hide user name/role in header on small mobile screens */
+  }
+  .nav-logout {
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+  }
+  .nav-brand {
+    font-size: 15px !important;
+  }
+  .auth-card {
+    padding: 24px 16px !important;
+  }
+  .tab-btn {
+    font-size: 12px !important;
+    padding: 5px 8px !important;
+  }
+  .tabs {
+    gap: 4px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .stats-grid {
+    grid-template-columns: 1fr !important; /* stack stats on very small screens */
+  }
 }
