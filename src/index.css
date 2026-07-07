@@ -745,7 +745,13 @@ h1, h2, h3, h4 {
     padding: 16px !important;
   }
   .nav-user-info {
-    display: none !important; /* Hide user name/role in header on small mobile screens */
+    display: block !important;
+  }
+  .nav-user-name {
+    font-size: 11px !important;
+  }
+  .nav-user-role {
+    font-size: 8.5px !important;
   }
   .nav-logout {
     font-size: 11px !important;
