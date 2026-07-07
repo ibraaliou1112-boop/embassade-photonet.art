@@ -88,16 +88,16 @@ function AffiliateInfoCard() {
         <h4 className="info-section-title">Comment ça fonctionne ?</h4>
         <ul className="info-list">
           <li className="info-item">
-            <strong>1. Obtenez votre code</strong> : Créez votre compte affilié et récupérez votre lien WhatsApp personnalisé.
+            <strong>1. Obtenez votre lien</strong> : Récupérez votre lien de parrainage personnalisé depuis votre tableau de bord.
           </li>
           <li className="info-item">
-            <strong>2. Partagez votre lien</strong> : Envoyez le lien à vos contacts. Lorsqu'ils cliquent, WhatsApp s'ouvre avec votre code pré-rempli.
+            <strong>2. Partagez votre lien</strong> : Envoyez-le à vos contacts ou mettez-le dans votre statut. Dès qu'ils l'ouvrent, leur visite est immédiatement enregistrée et ils sont identifiés comme vos filleuls.
           </li>
           <li className="info-item">
-            <strong>3. Vos filleuls s'inscrivent</strong> : Dès que le bot WhatsApp reçoit le code, il lie définitivement le compte du filleul au vôtre.
+            <strong>3. Inscription automatique</strong> : Qu'ils s'inscrivent sur la page web ou rejoignent directement le bot WhatsApp, ils sont automatiquement reliés à votre compte.
           </li>
           <li className="info-item">
-            <strong>4. Gagnez 30% de commission</strong> : Chaque fois qu'un de vos filleuls achète des crédits de génération d'images, <strong>30% du montant</strong> vous est automatiquement reversé.
+            <strong>4. Gagnez 30% de commission</strong> : Vous touchez <strong>30% de commission cash</strong> sur chacun des <strong>3 premiers achats (recharges)</strong> de vos filleuls.
           </li>
         </ul>
       </div>
@@ -106,7 +106,7 @@ function AffiliateInfoCard() {
         <h4 className="info-section-title">Conditions du programme</h4>
         <ul className="info-list">
           <li className="info-item">
-            <strong>Seuil de retrait minimum</strong> : Vous pouvez demander un retrait dès que votre solde atteint <strong>500 F CFA</strong>.
+            <strong>Seuil de retrait minimum</strong> : Vous pouvez demander un retrait dès que votre solde atteint <strong>1 000 F CFA</strong>.
           </li>
           <li className="info-item">
             <strong>Méthodes de retrait supportées</strong> : Transfert direct sur votre compte Mobile Money (Wave, Orange Money, Moov Money, MTN).
@@ -115,6 +115,12 @@ function AffiliateInfoCard() {
             <strong>Délais de versement</strong> : Les demandes sont traitées et payées sous 72h (3 jours ouvrés) via nos agrégateurs réglementés.
           </li>
         </ul>
+      </div>
+
+      <div style={{ marginTop: '24px', borderTop: '1px solid var(--border-color)', paddingTop: '16px', textAlign: 'center' }}>
+        <a href="https://photonet.art/recharge" target="_blank" rel="noopener noreferrer" style={{ fontSize: '13px', color: 'var(--accent-primary)', fontWeight: 700, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+          🏷️ Voir nos tarifs et forfaits
+        </a>
       </div>
     </div>
   );
