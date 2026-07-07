@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+import { BACKEND_URL } from '../config';
 const BOT_PHONE = '22990129647182'; // Numéro WhatsApp de Photonet
 
 export default function Dashboard({ session, handleLogout }) {

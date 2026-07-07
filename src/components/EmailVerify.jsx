@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+import { BACKEND_URL } from '../config';
 
 export default function EmailVerify({ setPage, regDetails, setSession }) {
   const [code, setCode] = useState('');
