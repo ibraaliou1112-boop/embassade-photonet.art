@@ -142,21 +142,21 @@ export default function Dashboard({ session, handleLogout }) {
 
         {/* Grille de statistiques */}
         <div className="stats-grid">
-          <div className="glass-panel stat-card">
+          <div className="stat-card blue-card">
             <div className="stat-label">Clics sur lien</div>
-            <div className="stat-value text-gradient">{stats.clicks_count}</div>
+            <div className="stat-value">{stats.clicks_count}</div>
           </div>
-          <div className="glass-panel stat-card cyan">
+          <div className="stat-card amber-card">
             <div className="stat-label">Inscriptions parrainées</div>
-            <div className="stat-value text-gradient">{stats.referrals_count}</div>
+            <div className="stat-value">{stats.referrals_count}</div>
           </div>
-          <div className="glass-panel stat-card green">
+          <div className="stat-card green-card">
             <div className="stat-label">Gains Totaux</div>
-            <div className="stat-value text-gradient">{stats.total_earnings_xof.toLocaleString()} F CFA</div>
+            <div className="stat-value">{stats.total_earnings_xof.toLocaleString()} F CFA</div>
           </div>
-          <div className="glass-panel stat-card orange">
+          <div className="stat-card orange-card">
             <div className="stat-label">Solde Retirable</div>
-            <div className="stat-value text-gradient">{stats.balance_xof.toLocaleString()} F CFA</div>
+            <div className="stat-value">{stats.balance_xof.toLocaleString()} F CFA</div>
           </div>
         </div>
 

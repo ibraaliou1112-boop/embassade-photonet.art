@@ -292,8 +292,10 @@ h1, h2, h3, h4 {
 
 .dashboard-nav {
   height: 70px;
-  background: #ffffff; /* Solid non-transparent background */
+  background: #ffffff;
   border-bottom: 1px solid var(--border-color);
+  border-top: 3px solid var(--accent-primary); /* Cool top orange line */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02); /* Soft shadow */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -340,17 +342,18 @@ h1, h2, h3, h4 {
 
 .nav-logout {
   font-size: 12px;
-  background: none;
-  border: none;
+  background: transparent;
+  border: 1px solid var(--border-color);
   color: var(--text-secondary);
   cursor: pointer;
-  padding: 6px 10px;
-  border-radius: 4px;
+  padding: 7px 14px;
+  border-radius: 6px;
   transition: all 0.2s ease;
 }
 
 .nav-logout:hover {
-  background: rgba(239, 68, 68, 0.05);
+  background: rgba(239, 68, 68, 0.04);
+  border-color: rgba(239, 68, 68, 0.2);
   color: var(--accent-danger);
 }
 
@@ -380,22 +383,57 @@ h1, h2, h3, h4 {
   padding: 20px;
   position: relative;
   overflow: hidden;
-  background: transparent;
+  border-radius: 12px;
+  transition: all 0.2s ease;
 }
 
-.stat-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 100%;
-  background: var(--accent-primary);
+/* Stat Card Blue (Clics) */
+.stat-card.blue-card {
+  background: rgba(59, 130, 246, 0.04);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+.stat-card.blue-card .stat-value {
+  color: #2563eb;
+}
+.stat-card.blue-card .stat-label {
+  color: #1d4ed8;
 }
 
-.stat-card.cyan::before { background: var(--accent-secondary); }
-.stat-card.green::before { background: var(--accent-success); }
-.stat-card.orange::before { background: var(--accent-primary); }
+/* Stat Card Amber (Inscriptions) */
+.stat-card.amber-card {
+  background: rgba(245, 158, 11, 0.04);
+  border: 1px solid rgba(245, 158, 11, 0.15);
+}
+.stat-card.amber-card .stat-value {
+  color: #d97706;
+}
+.stat-card.amber-card .stat-label {
+  color: #b45309;
+}
+
+/* Stat Card Green (Gains Totaux) */
+.stat-card.green-card {
+  background: rgba(16, 185, 129, 0.04);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+.stat-card.green-card .stat-value {
+  color: #059669;
+}
+.stat-card.green-card .stat-label {
+  color: #047857;
+}
+
+/* Stat Card Orange (Solde Retirable) */
+.stat-card.orange-card {
+  background: rgba(234, 88, 12, 0.04);
+  border: 1px solid rgba(234, 88, 12, 0.15);
+}
+.stat-card.orange-card .stat-value {
+  color: #ea580c;
+}
+.stat-card.orange-card .stat-label {
+  color: #c2410c;
+}
 
 .stat-label {
   font-size: 10px;
