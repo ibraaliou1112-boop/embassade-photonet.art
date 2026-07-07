@@ -117,7 +117,7 @@ export default function Dashboard({ session, handleLogout }) {
   return (
     <div className="dashboard-container">
       {/* Barre de navigation */}
-      <nav className="dashboard-nav glass-panel" style={{ borderRadius: '0', borderLeft: 'none', borderRight: 'none', borderTop: 'none' }}>
+      <nav className="dashboard-nav">
         <div className="nav-brand" style={{ fontWeight: 800 }}>
           photonet<span style={{ color: 'var(--accent-primary)' }}>.art</span>
           <span style={{ fontSize: '12px', fontWeight: 500, color: 'var(--text-secondary)', marginLeft: '6px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Affiliés</span>
